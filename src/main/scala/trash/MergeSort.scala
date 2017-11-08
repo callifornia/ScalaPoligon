@@ -1,5 +1,7 @@
 package trash
 
+import scala.util.Random
+
 object MergeSort {
 
   def sortInt(xs: Array[Int]): Array[Int] = {
@@ -19,12 +21,12 @@ object MergeSort {
       case (left, right) if left.head <= right.head => left.head +: merge(left.tail, right)
       case (left, right) if left.head > right.head => right.head +: merge(left, right.tail)
       case _ =>  Array.empty[Int]
-
     }
   }
 
-  implicit class ArrayImplicits[T](a: Array[T]) {
-    def isEmptyOrHasOneElement: Boolean = a.length / 2 == 0
-    def splitAtMiddle: (Array[T], Array[T]) = a.splitAt(a.length / 2)
+  implicit class ArrayImplicits[T](xs: Array[T]) {
+    def isEmptyOrHasOneElement: Boolean = xs.length / 2 == 0
+    def splitAtMiddle: (Array[T], Array[T]) = xs.splitAt(xs.length / 2)
+    def getRandomElement: T = xs(Random.nextInt(xs.length - 1))
   }
 }
