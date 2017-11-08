@@ -23,7 +23,7 @@ object MergeSort {
     }
   }
 
-  implicit class Arrayrepresentation[T](a: Array[T]) {
+  implicit class ArrayImplicits[T](a: Array[T]) {
     def isEmptyOrHasOneElement: Boolean = a.length / 2 == 0
     def splitAtMiddle: (Array[T], Array[T]) = a.splitAt(a.length / 2)
   }
