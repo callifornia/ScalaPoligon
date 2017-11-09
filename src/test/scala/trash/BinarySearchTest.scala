@@ -5,6 +5,7 @@ import search.BinarySearch
 
 class BinarySearchTest extends FreeSpec with Matchers{
 
+
   "should return right array index if element was found" in {
     val array = Array(1,2,3,4, 22)
     BinarySearch.findElementInArray(22, array) shouldEqual 1
