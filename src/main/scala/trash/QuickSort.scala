@@ -1,6 +1,5 @@
 package trash
-import MergeSort._
-
+import utils.Implicits._
 object QuickSort {
 
   def sortInt(xs: Array[Int]): Array[Int] = {
