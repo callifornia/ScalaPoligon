@@ -19,7 +19,6 @@ object MergeSort {
       case (left, right) if right.isEmpty => left
       case (left, right) if left.head <= right.head => left.head +: merge(left.tail, right)
       case (left, right) if left.head > right.head => right.head +: merge(left, right.tail)
-      case _ =>  Array.empty[Int]
     }
   }
 }
