@@ -1,0 +1,6 @@
+*.class
+*.log
+.idea
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/dictionaries
