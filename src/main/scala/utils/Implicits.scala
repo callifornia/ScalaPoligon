@@ -10,6 +10,7 @@ object Implicits {
     def getMiddleIndex: Int = xs.length / 2
     def getMiddleElement: T = xs(xs.length / 2)
     def isArrayWithOneElementNotContain(el: Int): Boolean = xs.length == 1 && xs.head != el
+    def print: Unit = println(xs.mkString(", "))
   }
 
   implicit class IntImplicit(n: Int){
