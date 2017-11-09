@@ -1,6 +1,7 @@
 package trash
 
 import org.scalatest.{FreeSpec, Matchers}
+import search.BinarySearch
 
 class BinarySearchTest extends FreeSpec with Matchers{
 

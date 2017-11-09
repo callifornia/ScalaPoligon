@@ -1,4 +1,4 @@
-package trash
+package search
 
 object SomeMain {
   def main(args: Array[String]): Unit = {

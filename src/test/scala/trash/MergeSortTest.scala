@@ -1,6 +1,8 @@
 package trash
 
 import org.scalatest.{FreeSpec, Matchers}
+import search.MergeSort
+
 import scala.util.Random
 
 class MergeSortTest extends FreeSpec with Matchers{

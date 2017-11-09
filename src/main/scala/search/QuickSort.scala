@@ -1,4 +1,5 @@
-package trash
+package search
+
 import utils.Implicits._
 object QuickSort {
 

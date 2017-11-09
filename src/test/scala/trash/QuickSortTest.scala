@@ -1,6 +1,7 @@
 package trash
 
 import org.scalatest.{FreeSpec, Matchers}
+import search.QuickSort
 
 import scala.util.Random
 
