@@ -1,4 +1,4 @@
-package search
+package s2
 
 import org.scalatest.{FreeSpec, Matchers}
 

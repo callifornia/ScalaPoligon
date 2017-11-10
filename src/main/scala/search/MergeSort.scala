@@ -1,4 +1,4 @@
-package search
+package s2
 
 import utils.Implicits._
 object MergeSort {
