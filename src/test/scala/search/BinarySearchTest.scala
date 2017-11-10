@@ -20,17 +20,14 @@ class BinarySearchTest extends FreeSpec with Matchers{
       BinarySearch.findElementInArray(3, array) shouldEqual 2
     }
 
-    "if element in third array position" ignore {
+    "if element in third array position" in {
       BinarySearch.findElementInArray(4, array) shouldEqual 3
     }
 
-    "if element in forth array position" ignore {
+    "if element in forth array position" in {
       BinarySearch.findElementInArray(5, array) shouldEqual 4
     }
 
-    "if element in fifth array position" in {
-      BinarySearch.findElementInArray(1, array) shouldEqual 0
-    }
   }
 
   "should return -1 if element was not found" in {
