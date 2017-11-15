@@ -6,6 +6,13 @@ import utils.Implicits._
 object BinarySearch {
 
 
+  /**
+    * Binary search takes O(log N) time.
+    *
+    * @param n number which should be found
+    * @param xs array to search in
+    * @return index of n position if element was found, -1 otherwise
+    */
   def findElementInArray(n: Int, xs: Array[Int]): Int = {
 
     def search(n: Int, xs: Array[Int], index: Int): Int = {
