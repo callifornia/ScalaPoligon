@@ -1,0 +1,1 @@
+val good1 = Good("a")

@@ -1,0 +1,25 @@
+{ "changedAccommodations":[
+  {
+    "name": "some name 1",
+    "mhid": "some mhid",
+    "ekms": "reference code",
+    "nurvis": ["selling code1", "selling code2"],
+    "brand": "some brand",
+    "brandCode": "some brand code",
+    "season": "maybe season",
+    "catalogs": ["catalog 1", "catalog 2"],
+    "language": "some Locale",
+    "live": true
+  }, {
+    "name": "some name 2",
+    "mhid": "some mhid 2",
+    "ekms": "reference code 2",
+    "nurvis": ["selling code22", "selling code22"],
+    "brand": "some brand 2",
+    "brandCode": "some brand code 2",
+    "season": "maybe season 2",
+    "catalogs": ["catalog 22", "catalog 22"],
+    "language": "some Locale 2",
+    "live": false
+  }
+]}
