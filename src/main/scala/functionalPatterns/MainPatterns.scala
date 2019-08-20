@@ -4,6 +4,10 @@ object MainPatterns {
   def main(args: Array[String]): Unit = {
     /*
 
+
+    links:
+      https://hackernoon.com/functors-and-applicatives-b9af535b1440
+
     FUNCTOR
       It's like a box. With map method and 2 laws
       trait F[A]{
@@ -15,6 +19,26 @@ object MainPatterns {
         identity - is a function defined in scala.Predef.identity()
       2) COMPOSITION law:
         functor.map(f).map(g) == functor.map(f andThen g)
+
+      Some example. We do have two implementation of our functor (list and option):
+        def main(args: Array[String]): Unit = {
+          listFunctor.fmap(List(1,2,3))(_+1).printlnFoo()
+          optionFunctor.fmap(Some(1))(_+1).printlnFoo()
+        }
+
+        def listFunctor = new Functor[List] {
+          override def fmap[A, B](a: List[A])(f: A => B) = a map f
+        }
+
+        def optionFunctor = new Functor[Option] {
+          override def fmap[A, B](a: Option[A])(f: A => B) = a map f
+        }
+
+        trait Functor[F[_]] {
+          def fmap[A, B](a: F[A])(f: A => B): F[B]
+        }
+
+
 
     MONAD
        Monad is not a class or a trait; monad is a concept.
