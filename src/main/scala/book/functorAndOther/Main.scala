@@ -16,6 +16,7 @@ object Main {
     }
   }
 }
+
 trait Functor[F[_]] {
   def fmap[A, B](a: F[A])(f: A => B): F[B]
 }

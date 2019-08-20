@@ -108,6 +108,61 @@ object MainPatterns {
             val result = (f1 |@| f2 |@| f3 )((a,b,c) => a + b + c)
             println(s"Result: ${Await.result(result, 5.seconds)}")
 
+
+      MONOID
+        Something that take two arguments with the same type and return result of operation
+        with the same type
+
+        monoid itself
+          trait Monoid[A]{
+            def empty: A
+            def combine(a1: A, a2: A): A
+          }
+
+
+        Example (we are going to sum money):
+          case class Money(value: Int)
+          object Money {
+            // implementation of summing money
+            implicit val sumMoney: Monoid[Money] = new Monoid[Money] {
+              override def empty: Money = Money(0)
+              override def combine(a1: Money, a2: Money): Money = {
+                Money(a1.value + a2.value)
+              }
+            }
+          }
+
+
+
+        def totalMoney(xs: List[Money])(implicit m: Monoid[Money]) = {
+          xs.foldLeft(m.empty){(acc, el) => m.combine(acc, el)}
+        }
+
+        lazy val list = List(Money(1), Money(2), Money(3), Money(4), Money(5))
+
+        lazy val result = totalMoney(list)
+        println(result)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
      */
 
 
