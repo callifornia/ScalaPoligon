@@ -1,5 +1,9 @@
 package implicitsRepeat
 
+import implicitsRepeat.some_module.{Converter, Person}
+import implicitsRepeat.some_module._
+
+
 object ImplicitsMain {
   def main(args: Array[String]): Unit = {
     (0 to 20)

@@ -3,6 +3,8 @@ package functionalPatterns
 import java.util.concurrent.ConcurrentHashMap
 
 import scala.concurrent.{Await, Future}
+import scala.concurrent.duration._
+import scala.concurrent.ExecutionContext.Implicits.global
 
 // https://softwaremill.com/reader-monad-constructor-dependency-injection-friend-or-foe/
 object DependecyInject_via_Constructor {

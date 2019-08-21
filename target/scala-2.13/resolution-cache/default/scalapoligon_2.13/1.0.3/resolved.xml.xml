@@ -4,7 +4,7 @@
 		module="scalapoligon_2.13"
 		revision="1.0.3"
 		status="integration"
-		publication="20190820153651"
+		publication="20190820230140"
 	>
 		<description>
 		ScalaPoligon
@@ -32,12 +32,18 @@
 	<dependencies>
 		<dependency org="org.scala-lang" name="scala-compiler" rev="2.13.0" conf="scala-tool->default,optional(default)"/>
 		<dependency org="org.scala-lang" name="scala-library" rev="2.13.0" conf="scala-tool->default,optional(default);compile->default(compile)"/>
-		<dependency org="com.typesafe.akka" name="akka-stream_2.13" rev="2.5.23" conf="compile->default(compile)"/>
-		<dependency org="com.typesafe.akka" name="akka-stream-testkit_2.13" rev="2.5.23" conf="test->default(compile)"/>
-		<dependency org="com.typesafe.akka" name="akka-actor_2.13" rev="2.5.23" conf="compile->default(compile)"/>
-		<dependency org="com.typesafe.akka" name="akka-testkit_2.13" rev="2.5.23" conf="test->default(compile)"/>
+		<dependency org="com.typesafe.akka" name="akka-stream_2.13" rev="2.5.25" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.akka" name="akka-stream-testkit_2.13" rev="2.5.25" conf="test->default(compile)"/>
+		<dependency org="com.typesafe.akka" name="akka-actor_2.13" rev="2.5.25" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.akka" name="akka-testkit_2.13" rev="2.5.25" conf="test->default(compile)"/>
+		<dependency org="com.typesafe.akka" name="akka-remote_2.13" rev="2.5.25" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.akka" name="akka-cluster_2.13" rev="2.5.25" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.akka" name="akka-cluster-sharding_2.13" rev="2.5.25" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.akka" name="akka-http_2.13" rev="10.1.8" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.akka" name="akka-http-spray-json_2.13" rev="10.1.8" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.akka" name="akka-distributed-data_2.13" rev="2.5.25" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.akka" name="akka-persistence_2.13" rev="2.5.25" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.akka" name="akka-cluster-tools_2.13" rev="2.5.25" conf="compile->default(compile)"/>
 		<dependency org="org.typelevel" name="cats-core_2.13" rev="2.0.0-RC1" conf="compile->default(compile)"/>
 		<dependency org="org.typelevel" name="cats-mtl-core_2.13" rev="0.6.0" conf="compile->default(compile)"/>
 		<dependency org="org.typelevel" name="cats-mtl-laws_2.13" rev="0.6.0" conf="test->default(compile)"/>

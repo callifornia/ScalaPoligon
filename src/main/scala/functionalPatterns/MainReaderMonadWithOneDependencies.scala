@@ -1,5 +1,11 @@
 package functionalPatterns
 
+import functionalPatterns.MainReaderMonadWithOneDependencies.repo._
+import functionalPatterns.MainReaderMonadWithOneDependencies.models._
+import functionalPatterns.MainReaderMonadWithOneDependencies.monads._
+import functionalPatterns.MainReaderMonadWithOneDependencies.services._
+import functionalPatterns.MainReaderMonadWithOneDependencies.services.UserService._
+
 object MainReaderMonadWithOneDependencies {
   def main(args: Array[String]): Unit = {
     val result = prependIntoName(1).run(UserRepoImpl)
