@@ -1,0 +1,13 @@
+PRIMARY KEY(state)
+  - first value in primary key is a PARTITION KEY, in our case it's a 'state'
+  - to be able have a uniq primary key for a record we should write something like this
+PRIMARY KEY((state), city, name)
+  - 'state' is a partition key(in another words it's a grouping)
+  - 'city' and 'name' -> clustering key
+  - clustering key is responsible for sorting and identify unique row
+
+QUERING:
+  - partition key must be included - it should know where to search data
+
+
+
