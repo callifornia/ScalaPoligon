@@ -20,6 +20,7 @@ libraryDependencies ++= Seq(
   "com.typesafe.akka" %% "akka-persistence" % "2.5.25",
   "com.typesafe.akka" %% "akka-cluster-tools" % "2.5.25",
   "org.typelevel" %% "cats-core" % "2.0.0-RC1",
+  "org.typelevel" %% "cats-effect" % "2.0.0-RC1",
   "org.typelevel" %% "cats-mtl-core" % "0.6.0",
   "org.typelevel" %% "cats-mtl-laws" % "0.6.0" % Test,
   "org.scalatest" %% "scalatest" % "3.0.8" % "test",

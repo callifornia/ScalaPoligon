@@ -11,3 +11,34 @@ QUERING:
 
 
 
+CAP theorem(only two possible):
+              Consistency         - it's about if i said is that my data should be in all replica or everywere where data should be
+  (cassandra) Availability        - i should be online 24/7
+  (cassandra) Partition tolerance - one group of nodes can not see another group of nodes
+
+
+
+Difference between RELATIONAL DB and Cassandra
+
+
+    RELATION                                    Cassandra
+Sample relation methodology                 Cassandra modeling methodology
+Data -> Modeling -> Application             Application -> Modeling -> Data
+Entities are king                           Queries are king
+Primary key for uniqueness                  Primary key mach more
+Often has a single point of failure         Distributed architecture
+ACID compliant                              CAP theorem
+Joins and indexes                           Denormalization
+Referential integrity                       RI not enforced
+
+
+ACID compliant
+ - Atomicity     -> commit OR rollback
+ - Consistencies -> transaction can not leave db in incorrect state
+ - Isolation     -> transactions should be isolated from each other
+ - Durability    -> save to disk
+
+ACID causes a significant performance penalty
+
+Cassandra does not support ACID, however on
+  INSERT,UPDATE, DELETE it support: atomicity, durability, isolation
