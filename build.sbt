@@ -1,7 +1,7 @@
 name := "ScalaPoligon"
 
 version := "1.0.3"
-scalaVersion := "2.13.0"
+scalaVersion := "2.12.0"
 libraryDependencies ++= Seq(
   "com.typesafe.akka" %% "akka-stream" % "2.5.25",
   "com.typesafe.akka" %% "akka-stream-testkit" % "2.5.25" % Test,
@@ -25,5 +25,11 @@ libraryDependencies ++= Seq(
   "org.typelevel" %% "cats-mtl-laws" % "0.6.0" % Test,
   "org.scalatest" %% "scalatest" % "3.0.8" % "test",
   "org.scalactic" %% "scalactic" % "3.0.8",
-  "org.scalaz" %% "scalaz-core" % "7.2.28"
+  "com.chuusai" %% "shapeless" % "2.3.3",
+  "ca.mrvisser" %% "sealerate" % "0.0.5",
+  "com.typesafe.scala-logging" %% "scala-logging" % "3.9.2",
+  "ch.qos.logback" % "logback-classic" % "1.2.3",
+  "com.sksamuel.avro4s" %% "avro4s-core" % "3.0.1",
+  "com.typesafe.play" %% "play-json" % "2.8.1",
+  "org.scalaj" %% "scalaj-http" % "2.4.2"
 )
